@@ -1,0 +1,136 @@
+.card {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background: var(--work);
+}
+
+.cardIcon {
+	position: relative;
+	height: 20%;
+	overflow: hidden;
+}
+
+#work {
+	background: var(--work);
+}
+
+#work .cardIcon {
+	background: url('../../../public/img/icon-work.svg') no-repeat right 10% top 30%;
+}
+
+#play {
+	background: var(--play);
+}
+
+#play .cardIcon {
+	background: url('../../../public/img/icon-play.svg') no-repeat right 10% top 30%;
+}
+
+#study {
+	background: var(--study);
+}
+
+#study .cardIcon {
+	background: url('../../../public/img/icon-study.svg') no-repeat right 10% top 30%;
+}
+
+#exercise {
+	background: var(--exercise);
+}
+
+#exercise .cardIcon {
+	background: url('../../../public/img/icon-exercise.svg') no-repeat right 10% top 30%;
+}
+
+#social {
+	background: var(--social);
+}
+
+#social .cardIcon {
+	background: url('../../../public/img/icon-social.svg') no-repeat right 10% top 30%;
+}
+
+#self-care {
+	background: var(--self-care);
+}
+
+#self-care .cardIcon {
+	background: url('../../../public/img/icon-self-care.svg') no-repeat right 10% top 30%;
+}
+
+.cardContent {
+	background: var(--dark-blue);
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	border-radius: 20px;
+}
+
+.cardHeader {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cardInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+.cardTitle {
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.cardMoreBtn {
+	background: transparent;
+	border: none;
+	outline: none;
+	width: max-content;
+	cursor: pointer;
+}
+
+.cardHours {
+	font-size: 46px;
+	line-height: 58px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color: #ffffff;
+}
+
+.cardLastweek {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--pale-Blue);
+}
+
+@media screen and (max-width:500px) {
+	.cardContent {
+		padding: 20px;
+	}
+
+	.cardInfo {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.cardHours {
+		font-size: 32px;
+		line-height: 44px;
+	}
+
+	.cardLastweek {
+		font-size: 12px;
+	}
+}

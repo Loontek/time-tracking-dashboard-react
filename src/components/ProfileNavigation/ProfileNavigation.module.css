@@ -1,0 +1,39 @@
+.profileNavigation {
+	width: 100%;
+	/* height: 30%; */
+	padding: 30px;
+}
+
+.profileNavigation ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.profileNavigationLink {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--desaturated-blue);
+	transition: color .2s ease-in-out;
+	cursor: pointer;
+}
+
+.profileNavigationLink:hover {
+	color: var(--pale-Blue);
+}
+
+.active {
+	color: #ffffff;
+}
+
+@media screen and (max-width:500px) {
+	.profileNavigation {
+		padding: 20px;
+	}
+
+	.profileNavigation ul {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
